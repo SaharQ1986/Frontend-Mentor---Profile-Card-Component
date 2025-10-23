@@ -88,7 +88,7 @@ This project focuses on layout, positioning, and visual hierarchy using Flexbox 
 
 ## 🧑💻 Author
 
-- Frontend Mentor – [@your-profile](https://www.frontendmentor.io/profile/your-profile)
+- Frontend Mentor – [@SaharQ1986](https://www.frontendmentor.io/profile/SaharQ1986)
 - GitHub – [@SaharQ1986](https://github.com/SaharQ1986)
 
 ---
