@@ -1,0 +1,155 @@
+:root {
+  --primary-color-blue: hsl(185, 75%, 39%);
+  --primary-color-navy: hsl(229, 23%, 23%);
+  --primary-color-gray: hsl(227, 10%, 46%);
+
+  --nuetral-clr-100: hsl(225, 10%, 92%);
+
+  --body-font: 18px;
+}
+body {
+  min-height: 100vh;
+  max-width: 1200px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--primary-color-blue);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: left -500px top -500px, right -500px bottom -500px;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.card {
+  width: 350px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.top-card {
+  height: 200px;
+  background-image: url("images/bg-pattern-card.svg");
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.bottom-card {
+  background-color: var(--nuetral-clr-100);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--nuetral-clr-100);
+  top: 50%;
+  left: 0;
+  transform: translate(110%, 50%);
+}
+.bottom-card .name {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color-navy);
+}
+.bottom-card .age {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary-color-gray);
+}
+.bottom-card .location {
+  font-size: var(--body-font);
+  font-weight: 400;
+  color: var(--primary-color-gray);
+  margin: 3px;
+  margin-bottom: 30px;
+}
+.bottom-card .info {
+  border-bottom: 1px solid #ced4da;
+  width: 100%;
+}
+.bottom-card .social-info {
+  display: flex;
+}
+.bottom-card .social-info dl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+dd {
+  margin: 0;
+  font-size: var(--body-font);
+  font-weight: 700;
+  color: var(--primary-color-navy);
+}
+dl > div {
+  flex-basis: 33%;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+dt {
+  font-size: 11px;
+  color: var(--primary-color-gray);
+  margin-top: 6px;
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-position: left -140px top -160px, right -140px bottom -170px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card {
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+  }
+  .top-card img {
+    top: 50%;
+    left: 0;
+    transform: translate(100%, 70%);
+  }
+  .bottom-card .name {
+    font-size: 18px;
+  }
+  .bottom-card .age {
+    margin-left: 8px;
+    font-size: 17px;
+  }
+  .bottom-card .location {
+    font-size: 16px;
+    margin: 3px;
+    margin-bottom: 30px;
+  }
+  dd {
+    margin: 0;
+    font-size: 16px;
+  }
+  dt {
+    font-size: 10px;
+  }
+}
